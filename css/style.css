@@ -9,8 +9,9 @@ body{
 .resources{
   margin: auto;
   width: 70%;
+  align-content: left;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 * {
@@ -63,7 +64,7 @@ padding: 10px;
 }
 
 .card a{
-  color:#422956;
+  color:black;
   text-decoration: none;
 }
 
@@ -78,7 +79,7 @@ padding: 10px;
 }
 
 .nav-card {
-  padding: 16px;
+  padding: 14px;
   text-align: left;
   height: 100%;
   font-size: 22px;
@@ -97,11 +98,16 @@ padding: 10px;
 
 .nav-column {
   float: right;
-  width: 40%;
-  margin-top: 5%
+  position: relative;
 }
 
-.nav-row {margin: 50px 30px 50px 30px;}
+.nav-row {
+  float: right;
+  position: absolute;
+  top: 50%;
+  transform: translate(140%, -50%);
+  width: 40%
+}
 
 .nav-row:after {
   content: "";
@@ -109,8 +115,9 @@ padding: 10px;
   clear: both;
 }
 
-@media screen and (max-width: 300px height:200px) {
+@media screen and (max-width: 300px) {
   .nav-column {
+    height: 150px;
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -140,18 +147,24 @@ padding: 10px;
 
 .article{
   margin: auto;
-  width: 70%
+  width: 70%;
+  padding-bottom: 50px
 }
 
-.article-header h1{
+.article-header h1, h2a{
   margin-top: 60px;
   margin-bottom: -15px;
   font-size: 60px
 }
 
-.content img{
+.content #img-left{
   float: left;
-  margin: 5px 15px 5px 5px;
+  padding: 15px 15px 15px 0px;
+}
+
+.content #img-right{
+  float: right;
+  padding: 0px 15px 15px 15px;
 }
 
 .content p{
@@ -162,4 +175,51 @@ padding: 10px;
 .resources a{
   color: black;
   font-style:italic;
+}
+
+.about{
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block
+}
+
+.about img{
+  float: left;
+  padding: 15px 15px 15px 0px;
+  height: 400px;
+  width: 400px;
+}
+
+.about p{
+  text-align: justify;
+  font-size: 20px;
+}
+
+#subheading{
+  padding-top: 15px;
+  font-weight: bold;
+  margin-bottom: -10px
+}
+
+#paragraph{
+  margin-bottom: 50px
+}
+
+.img-about {
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translate(10%, -50%);
+  width: 60%
+}
+
+.img-about img{
+  width: 700px;
+}
+
+.topnav img{
+  height: 24px
 }
