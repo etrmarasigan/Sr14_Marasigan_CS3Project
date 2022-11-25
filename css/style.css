@@ -124,13 +124,13 @@ padding: 10px;
   }
 }
 
-.topnav {
+nav {
     background-color: #c4bcd7;
     overflow: hidden;
   padding: 10px 20px 10px 20px;
 }
 
-.topnav a {
+nav a {
   float: left;
   color:#422956;
   text-align: center;
@@ -151,23 +151,23 @@ padding: 10px;
   padding-bottom: 50px
 }
 
-.article-header h1, h2a{
+section h1, h2a{
   margin-top: 60px;
   margin-bottom: -15px;
   font-size: 60px
 }
 
-.content #img-left{
+article #img-left{
   float: left;
   padding: 15px 15px 15px 0px;
 }
 
-.content #img-right{
+article #img-right{
   float: right;
   padding: 0px 15px 15px 15px;
 }
 
-.content p{
+article p{
   text-align: justify;
   font-size: 20px;
 }
@@ -210,16 +210,32 @@ padding: 10px;
 
 .img-about {
   float: left;
-  position: absolute;
-  top: 50%;
-  transform: translate(10%, -50%);
+  position: relative;
+  left: 7%;
   width: 60%
 }
 
 .img-about img{
-  width: 700px;
+  width: 70%;
+  margin-top: 5%
 }
 
-.topnav img{
+nav img{
   height: 24px
+}
+
+#italicize{
+  font-style: italic;
+}
+
+article h3{
+  margin-bottom: -15px
+}
+
+#additional {
+  padding-top: 10px
+}
+
+iframe{
+  display: block; margin: auto
 }
